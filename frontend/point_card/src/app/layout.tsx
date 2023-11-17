@@ -21,7 +21,7 @@ export default async function RootLayout({
   // const { data: brandInfo, statusCode } = await fetchBrandInfo(hostname)
   // console.log('statusCode', statusCode)
   // console.log('brandInfo', brandInfo)
-  const response = await fetch(`http://localhost:3000/api/brands/${hostname}`)
+  const response = await fetch(`http://localhost:3000/api/brands/`)
   const data = await response.json()
   console.log('data', data)
 

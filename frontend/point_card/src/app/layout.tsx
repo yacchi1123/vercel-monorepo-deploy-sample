@@ -18,9 +18,6 @@ export default async function RootLayout({
 }) {
   const hostname = getHostname()
   console.log('hostname', hostname)
-  // const { data: brandInfo, statusCode } = await fetchBrandInfo(hostname)
-  // console.log('statusCode', statusCode)
-  // console.log('brandInfo', brandInfo)
   const response = await fetch(`https://dummy.spa-works.jp/api/brands`)
   const data = await response.json()
   console.log('data', data)
